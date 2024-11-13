@@ -1,0 +1,183 @@
+@import '../../Style/_variables.scss';
+
+.editar-livro-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+
+  .container7 {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+
+    .button-back {
+      background-color: #6a4f4b;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #8a6b61;
+      }
+    }
+
+    .editar-livro {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 20px;
+
+      img {
+        width: 200px;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .livro-detalhe-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+          font-size: 1.3rem;
+          color: #6a4f4b;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+          color: #6a4f4b;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 1rem;
+          color: #6a4f4b;
+          line-height: 1.6;
+        }
+
+        // Estilos para os campos editáveis
+        input,
+        textarea {
+          width: 100%;
+          padding: 0.5rem;
+          font-size: 0.9rem;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          color: #6a4f4b;
+
+          &:focus {
+            border-color: #6a4f4b;
+            outline: none;
+          }
+        }
+
+        textarea {
+          min-height: 80px;
+        }
+      }
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    
+      .button-left-group {
+        display: flex;
+        gap: 10px;
+      }
+    
+      .button-delete {
+        background-color: #d9534f;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    
+        &:hover {
+          background-color: #c9302c;
+        }
+      }
+    }
+    
+    }
+      .button-read {
+        background-color: #6a4f4b;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #8a6b61;
+        }
+
+        &.lido {
+          background-color: #4caf50; // Verde para o status "Lido"
+        }
+      }
+
+      .button-save {
+        background-color: #5bc0de;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #31b0d5;
+        }
+      }
+
+      .button-cancel {
+        background-color: #f0ad4e;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #ec971f;
+        }
+      }
+
+      .button-read-status.lido {
+        background-color: #4caf50;
+        color: #fff;
+      }
+      
+      .button-read-status.nao-lido {
+        background-color: #d9534f;
+        color: #fff;
+      }
+    }
+
+  

@@ -1,0 +1,132 @@
+@import '../../Style/_variables.scss';
+
+.h1 {
+  display: inline-block;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8a6b61;
+
+  display: inline-block;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8a6b61;
+
+  h2 {
+    color: #8a6b61;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #6a4f4b;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.home-section {
+  padding: 40px 80px;
+}
+
+.livros-container1 {
+  padding: 70px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #f0ece9;
+  border: 1px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.livro-card {
+  width: 270px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.9);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  border: 3px solid transparent;
+  background-image: linear-gradient(145deg, #a37f79, #6a4f4b);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  text-decoration: none; /* Remove qualquer decoração do link */
+}
+
+.livro-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.livro-card img {
+  width: 100%;
+  height: auto;
+}
+
+.livro-info {
+  margin-top: 7px;
+  text-align: center;
+}
+
+.livro-info h3, .livro-info p {
+  text-decoration: none; /* Remove o sublinhado */
+  color: white;
+}
+
+.livro-info h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.livro-info p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para a paginação */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+
+  button {
+    background-color: #6a4f4b;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  button:hover:not(:disabled) {
+    background-color: #8a6b61;
+  }
+
+  span {
+    font-size: 16px;
+    color: #6a4f4b;
+  }
+}

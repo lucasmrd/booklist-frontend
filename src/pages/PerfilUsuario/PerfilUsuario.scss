@@ -1,0 +1,78 @@
+@import '../../Style/_variables.scss';
+
+.perfilusuario-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #e9e4df;
+
+  .container12 {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+
+    h2 {
+      font-size: 2rem;
+      color: #6a4f4b;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .perfilusuario-info {
+      font-size: 1.2rem;
+      color: #333;
+
+      p {
+        margin: 10px 0;
+      }
+
+      strong {
+        color: #6a4f4b;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-top: 5px;
+        color: #6a4f4b;
+
+        &:focus {
+          border-color: #6a4f4b;
+          outline: none;
+        }
+      }
+
+      .button-save, .button-cancel, .button-edit {
+        background-color: #6a4f4b;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 15px;
+        margin-right: 10px;
+
+        &:hover {
+          background-color: #8a6b61;
+        }
+      }
+
+      .button-cancel {
+        background-color: #d9534f;
+
+        &:hover {
+          background-color: #c9302c;
+        }
+      }
+    }
+  }
+}
